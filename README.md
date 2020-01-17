@@ -21,3 +21,39 @@ Once the simulation ends, either by command or by one of the given conditions, i
 associated costs associated in the terminal.
 
 ## Design and Approach
+All source code is in the src/main folder
+
+It is natural to imagine the site Map as a 2D array with each cell holding a Block of Land.
+
+The package structure is divided into: 
+1) constants (for enums such as Block Type, Command, Item and 
+Bulldozer Orientation)
+2) data for central objects such as Bulldozer, Location and Command History
+3) service, business services that perform various actions
+4) simulator for main simulator class 
+5) validation, for hosting validation errors
+
+The simulator first creates and prints a 2D Site Map given the input text file.
+
+It then runs an infinite loop accepting commands from the user for next actions.
+Each action triggers an execute method which moves the bulldozer either in
+location or orientation. 
+
+Each execution runs the series of business rules as per the requirement and 
+also keeps a tab of the squares cleared and the cost in a scoring Map with the
+associated keys.
+
+Post execution, if the simulation needs to end in case any of the end conditions
+are met, the costs are then aggregated and printed to the console.
+
+Comments are provided in the code as needed and validations are done in every
+possible part of the code to avoid anomalies.
+
+## Tests
+All tests are in the src/test folder
+
+Tests are per business service implementation and cover a range of base cases,
+error and boundary conditions.
+
+These tests can all run without providing any inputs. Some tests use the siteMap files
+directly from the src/test/resources folder.
