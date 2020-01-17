@@ -44,7 +44,8 @@ also keeps a tab of the squares cleared and the cost in a scoring Map with the
 associated keys.
 
 Post execution, if the simulation needs to end in case any of the end conditions
-are met, the costs are then aggregated and printed to the console.
+are met, the costs are then aggregated and printed to the console. This also marks the end
+of the outer loop.
 
 Comments are provided in the code as needed and validations are done in every
 possible part of the code to avoid anomalies.
