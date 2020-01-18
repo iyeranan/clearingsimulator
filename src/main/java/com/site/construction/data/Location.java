@@ -1,6 +1,6 @@
 package com.site.construction.data;
 
-//Location object in a 2D array
+//Location class, depicting row and column location in a 2D array
 public class Location {
     private int row;
     private int column;
