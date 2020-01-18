@@ -39,7 +39,7 @@ location or orientation.
 
 Each execution runs the series of business rules as per the requirement and 
 also keeps a tab of the squares cleared and the cost in a scoring Map with the
-associated keys.
+associated keys. Every block of land that is cleared is marked with a special C character to not double-count the land clearance.
 
 Post execution, if the simulation needs to end in case any of the end conditions
 are met, the costs are then aggregated and printed to the console. This also marks the end
