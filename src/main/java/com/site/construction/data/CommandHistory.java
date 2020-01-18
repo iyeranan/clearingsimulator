@@ -2,7 +2,7 @@ package com.site.construction.data;
 
 import com.site.construction.constants.Command;
 
-//Object storing command history
+//Class storing command history
 public class CommandHistory {
     private final Command command;
     private final int steps;
