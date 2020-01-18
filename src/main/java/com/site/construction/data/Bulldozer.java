@@ -2,7 +2,7 @@ package com.site.construction.data;
 
 import com.site.construction.constants.Orientation;
 
-//Bulldozer object, has location and orientation
+//Bulldozer class has location and orientation
 public class Bulldozer {
     private Location currentLocation;
     private Orientation orientation;
