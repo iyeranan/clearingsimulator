@@ -56,3 +56,7 @@ error and boundary conditions.
 
 These tests can all run without providing any inputs. Some tests use the siteMap files
 directly from the src/test/resources folder.
+
+## Enhancements/Improvements
+Once all blocks are cleared, notify user if they want to stop the simulation (to avoid costs)
+Add better messaging when simulation ends so that user is aware of Reason such as 'QUIT' or 'ATTEMPT to remove a protected Tree' or 'Bulldozer out of bounds'  
